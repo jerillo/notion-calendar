@@ -18,3 +18,7 @@ Playing around with Notion's API
 ## Usage Limits
 
 There are usage limits that limits how frequently I can use the Google Calendar API, including the number of events I can create :(
+
+## Preview
+
+![Google Calendar Preview](./preview/google-calendar-preview.png)
