@@ -10,6 +10,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@notionhq/client": "^0.1.3"
+    "@notionhq/client": "^0.1.3",
+    "dotenv": "^10.0.0"
   }
 }
