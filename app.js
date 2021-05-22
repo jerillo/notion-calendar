@@ -50,14 +50,10 @@ const getEventsToAdd = async () => {
 }
 
 /**
- * Retrieves each row in database and creates a corresponding event on Google Calendar. 
+ * Create Google Calendar event from event in `eventsToAdd`.
  */
-const createEvents = async (auth, calendar, calendarId) => {
+const createEvents = async (auth, calendar, calendarId, eventsToAdd) => {
 	try {
-    const eventsToAdd = await getEventsToAdd();
-    console.log(`eventsToAdd`, eventsToAdd);
-
-		// Create Google Calendar event from each row in database.
 		eventsToAdd.forEach((event) => {
 			calendar.events.insert(
 				{
@@ -96,7 +92,12 @@ const initCalendar = async (auth) => {
 		});
 		console.log('New Calendar', newCalendar.data);
 
-		createEvents(auth, calendar, newCalendar.data.id);
+    // Generate list of events to add from Notion database
+    const eventsToAdd = await getEventsToAdd();
+    console.log(`eventsToAdd`, eventsToAdd);
+
+    // Create actual Google Calendar events
+		createEvents(auth, calendar, newCalendar.data.id, eventsToAdd);    
 	} catch (error) {
 		console.error({ error: error.message });
 	}
