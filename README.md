@@ -10,16 +10,10 @@ Playing around with Notion's API
 - Notion API Reference: [https://developers.notion.com/reference](https://developers.notion.com/reference)
 - Google Calendar API Reference: [https://googleapis.dev/nodejs/googleapis/latest/calendar/classes/Calendar.html](https://googleapis.dev/nodejs/googleapis/latest/calendar/classes/Calendar.html)
 
-## Running Locally
+## Run Locally
 
-This utilizes Google Calendar API for Node.js. Use these resources to setup this command-line app:
-
-- Create a client secret JSON file called `credentials.json`. Follow the steps here: [Create Desktop application credentials](https://developers.google.com/workspace/guides/create-credentials#desktop)
-- Authorize the app by running
-
-    ```bash
-    node auth.js
-    ```
+1. Create a client secret JSON file called `credentials.json` by following these directions: [Create Desktop application credentials](https://developers.google.com/workspace/guides/create-credentials#desktop). **This will be used by Google Calendar API for authentication.**
+3. Run `node app.js`
 
 ## Usage Limits
 
