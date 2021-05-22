@@ -105,3 +105,8 @@ dist
 
 # Shell file for testing notion api using curl
 notion-api.sh
+
+# Google Calendar API credentials file and generated token
+# https://developers.google.com/workspace/guides/create-credentials#desktop
+credentials.json
+token.json
