@@ -21,4 +21,6 @@ There are usage limits that limits how frequently I can use the Google Calendar 
 
 ## Preview
 
-![Google Calendar Preview](./preview/google-calendar-preview.png)
+| Notion                        | Calendar                          |
+| :---------------------------: | :-------------------------------: |
+| ![notion](preview/notion.png) | ![calendar](preview/calendar.png) |
