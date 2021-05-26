@@ -1,7 +1,18 @@
 # Notion Calendar
 
-Playing around with Notion's API
-###### Author: Jesnine Erillo
+**Author: Jesnine Erillo**
+
+I just wanted to play around with Notion's public API :)
+
+This automates Google Calendar event creation from a Notion Database.
+
+The code here is customized for my specific Notion database that I use for keeping track of my coursework, and it utilizes the following properties:
+
+- `Name`: title of the assignment
+- `Class`: which class the assignment is for
+- `Link`: url of the assignment
+- `Type`: what kind of assignment it is
+- `Dates`: the dates that the assignment is due
 
 ---
 
@@ -22,6 +33,14 @@ There are usage limits that limits how frequently I can use the Google Calendar 
 
 ## Preview
 
+### Side-by-side
+
 |            Notion             |             Calendar              |
 | :---------------------------: | :-------------------------------: |
 | ![notion](preview/notion.png) | ![calendar](preview/calendar.png) |
+
+### Event Details
+
+The event details is also populated using fields from the database. As you can see below, the description includes the type and link. The event title is also prepended with the class that this event is for (e.g. "[CS 188]").
+
+![event-details](preview/event-details.png)
