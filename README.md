@@ -12,8 +12,9 @@ Playing around with Notion's API
 
 ## Run Locally
 
-1. Create a client secret JSON file called `credentials.json` by following these directions: [Create Desktop application credentials](https://developers.google.com/workspace/guides/create-credentials#desktop). **This will be used by Google Calendar API for authentication.**
-3. Run `node app.js`
+1. Fill out the variables in `.env.example` with your `NOTION_TOKEN` and `DATABASE_ID`. Follow the instructions on the [Notion API Reference](https://developers.notion.com/reference) to retrieve these values. Then rename the file to `.env`.
+2. Create a client secret JSON file called `credentials.json` by following these directions: [Create Desktop application credentials](https://developers.google.com/workspace/guides/create-credentials#desktop). **This will be used by Google Calendar API for authentication.**
+3. Run: `node app.js`
 
 ## Usage Limits
 
@@ -21,6 +22,6 @@ There are usage limits that limits how frequently I can use the Google Calendar 
 
 ## Preview
 
-| Notion                        | Calendar                          |
+|            Notion             |             Calendar              |
 | :---------------------------: | :-------------------------------: |
 | ![notion](preview/notion.png) | ![calendar](preview/calendar.png) |
